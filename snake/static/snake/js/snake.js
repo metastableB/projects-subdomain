@@ -5,6 +5,8 @@
 function Snake() {
 	this.x = 0;
 	this.y = 0;
+	this.score = 0;
+	this.score_incr = 10;
 	this.xspeed = 1;
 	this.yspeed = 0;
 	// History of cordinates. Updated on ieach update call.
@@ -56,6 +58,7 @@ function Snake() {
 			return false;
 		// TODO: Tail becomes invalid after this step. Handle that.
 		this.history.unshift(this.tail);
+		this.score += this.score_incr;
 		return true;
 	}
 

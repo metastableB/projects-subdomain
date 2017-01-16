@@ -23,6 +23,9 @@ function setup() {
 
 function draw() {
 	background(BG_COLOR);
+	textSize(30);
+	fill(0, 255, 255);
+	text(s.score, 10, 40);
 	var alive = s.update();
 	var ate_food = s.eat(f.x, f.y);
 	if (ate_food){
