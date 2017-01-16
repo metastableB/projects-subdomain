@@ -1,0 +1,52 @@
+<!--<head>
+<link rel="canonical" href="{{ request.get_host }}">
+</head>
+-->
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% load static %}
+{% block pageTitle %}<title>Projects</title>{% endblock %}
+
+{% block description %}
+	<meta name="description" content="Some of the fun projects I have done over the years.">
+{% endblock %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- For Icons -->
+<link rel="shortcut icon" href="{% static 'home/img/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'home/img/favicon.png' %}" type="image/x-icon">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="{% static 'home/img/android-desktop.png' %}">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Don Dennis">
+<link rel="apple-touch-icon-precomposed" href="{% static 'home/img/android-desktop.png' %}">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="{% static 'home/img/android-desktop.png' %}">
+<meta name="msapplication-TileColor" content="#DBE2EF">
+<link rel="shortcut icon" href="{% static 'home/img/favicon.png' %}">
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Boot strap Baby! -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Using font awesome for the icons (thank you OSS) -->
+<script src="https://use.fontawesome.com/84a0e59ef1.js"></script>
+
+<!-- My Styles (Baby) -->
+{% block custom_css %}
+	<link rel="stylesheet" href="{% static 'home/css/style.css' %}" media="screen" type="text/css">
+{% endblock %}
+<!-- Fonts -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Great+Vibes">

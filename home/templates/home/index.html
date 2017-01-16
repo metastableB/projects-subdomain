@@ -1,0 +1,32 @@
+{% extends 'home/extends/default.html' %}
+{% load static %}
+{% block content %}
+<!-- Heading -->
+<div class="row top-buffer-abs-l">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8 text-center">
+		<h1 class="h1-mod">My Projects Page</h1>
+	</div>
+	<div class="col-sm-8"></div>
+</div>
+	
+	<!-- Body text -->
+<div class="row top-buffer-abs-l">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8 body-text">
+	I plan to host my projects in this subdomain and link to my main domain.
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+<div class="row projects-list">
+	<div class="col-sm-2"></div>	
+	<div class="col-sm-8">
+		<div class="row projects-item text-center">
+			<a href="/snake">The Snake Game</a>
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+{% endblock %}
